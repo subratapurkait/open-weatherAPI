@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "fc75182f-a71e-4f58-bacd-8e3bd09f8af0",
+		"name": "Open Weather API collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23958232"
+	},
+	"item": [
+		{
+			"name": "open Weather API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "language",
+							"value": "{{language}}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "units",
+							"value": "{{units}}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "zipcode",
+							"value": "{{zipcode}}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "{{city}}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "co_ordinates",
+							"value": "50.0467656, 20.0048731",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:7777/location?lat=50.0467656&long=20.0048731",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"location"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.0467656"
+						},
+						{
+							"key": "long",
+							"value": "20.0048731"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "language",
+			"value": "en",
+			"type": "string"
+		},
+		{
+			"key": "units",
+			"value": "metric",
+			"type": "string"
+		},
+		{
+			"key": "zipcode",
+			"value": "401209",
+			"type": "string"
+		},
+		{
+			"key": "city",
+			"value": "Mumbai",
+			"type": "string"
+		}
+	]
+}
