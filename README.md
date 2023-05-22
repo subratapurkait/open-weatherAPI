@@ -2,7 +2,12 @@
 
 import the postman collection file.
 
-The .env file is also given
+The .env file is given for quick setup
+
+to install modules 
+npm install
+and then 
+npm start
 
 #forecast api
 here the mandatory query parameters are lat & long which is required to get the weather details of that particular location.
